@@ -5,6 +5,14 @@
 23432 -> да */
 void PalindromSearch (int number)
 {
-    
+    string num = number.ToString();
+    if (num[0]==num[4] & num[1]==num[3])
+    {
+        Console.WriteLine($"{number} -> да");
+    }
+    else 
+    {
+        Console.WriteLine($"{number} -> нет");
+    }
 }
-PalindromSearch (12267);
+PalindromSearch (12921);
